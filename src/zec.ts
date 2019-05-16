@@ -1,5 +1,6 @@
 export default {
   market_id: 'zcash',
+  index: 133,
   name: 'Zcash',
   symbol: 'zec',
   address_crypto: 'sha256',

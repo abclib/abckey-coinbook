@@ -1,5 +1,6 @@
 export default {
   market_id: 'digibyte',
+  index: 20,
   name: 'DigiByte',
   symbol: 'dgb',
   address_crypto: 'sha256',

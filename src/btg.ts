@@ -1,12 +1,13 @@
 export default {
-  market_id: 'bitcoin',
-  name: 'Bitcoin',
-  symbol: 'btc',
+  market_id: 'bitcoin-gold',
+  index: 156,
+  name: 'Bitcoin Gold',
+  symbol: 'btg',
   address_crypto: 'sha256',
   address_prefix: {
     mainnet: [
-      0x00, // P2PKH
-      0x05 // P2SH
+      0x26, // P2PKH
+      0x17 // P2SH
     ],
     testnet: [
       0x6f, // P2PKH
@@ -21,32 +22,28 @@ export default {
     '49': [ // P2WPKH in P2SH
       0x049d7878, // yprv
       0x049d7cb2 // ypub
-    ],
-    '84': [ // P2WPKH
-      0x04b2430c, // zprv
-      0x04b24746 // zpub
     ]
   },
   blocktime: 600, // seconds
   blockbook: [
-    'https://btc1.trezor.io',
-    'https://btc2.trezor.io',
-    'https://btc3.trezor.io',
-    'https://btc4.trezor.io',
-    'https://btc5.trezor.io'
+    'https://btg1.trezor.io',
+    'https://btg2.trezor.io',
+    'https://btg3.trezor.io',
+    'https://btg4.trezor.io',
+    'https://btg5.trezor.io'
   ],
   bitcore: [],
   network: {
-    coin: 'btc',
-    bech32: 'bc',
+    coin: 'btg',
+    bech32: 'btg',
     bip32: {
       private: 76066276, // xprv_magic
       public: 77429938 // xpub_magic_segwit_p2sh
     },
     dustThreshold: 0, // doesn't matter, for type correctness,
-    messagePrefix: 'Bitcoin Signed Message:\n',
-    pubKeyHash: 0, // address_type
-    scriptHash: 5, // address_type_p2sh
+    messagePrefix: 'Bitcoin Gold Signed Message:\n',
+    pubKeyHash: 38, // address_type
+    scriptHash: 23, // address_type_p2sh
     wif: 128 // doesn't matter, for type correctness
   }
 }

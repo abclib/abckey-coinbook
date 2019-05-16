@@ -1,5 +1,6 @@
 export default {
   market_id: 'dogecoin',
+  index: 3,
   name: 'Dogecoin',
   symbol: 'doge',
   address_crypto: 'sha256',

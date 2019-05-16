@@ -1,7 +1,8 @@
 export default {
   market_id: 'namecoin',
+  index: 7,
   name: 'Namecoin',
-  symbol: 'dgb',
+  symbol: 'nmc',
   address_crypto: 'sha256',
   address_prefix: {
     mainnet: [
