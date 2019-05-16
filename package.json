@@ -1,0 +1,38 @@
+{
+  "name": "@abckey/coinbook",
+  "version": "0.0.1",
+  "description": "Coin Book",
+  "author": "abckey <hi@abckey.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "tsc:check": "tsc --noEmit",
+    "tsc:watch": "npm run tsc:check -- --watch",
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "tsc & ava --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abcKeyCOM/coinbook.git"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.8",
+    "ava": "^1.4.1",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {},
+  "files": [
+    "dist"
+  ],
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
