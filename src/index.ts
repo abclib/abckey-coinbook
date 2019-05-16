@@ -1,13 +1,13 @@
-import _0 from './0'
-import _2 from './2'
-import _3 from './3'
-import _5 from './5'
-import _7 from './7'
-import _20 from './20'
-import _28 from './28'
-import _133 from './133'
-import _145 from './145'
-import _156 from './156'
+import _0 from './btc'
+import _2 from './ltc'
+import _3 from './doge'
+import _5 from './dash'
+import _7 from './nmc'
+import _20 from './dgb'
+import _28 from './vtc'
+import _133 from './zec'
+import _145 from './bch'
+import _156 from './btg'
 
 const COINBOOK = [
   _0,
