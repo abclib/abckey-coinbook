@@ -1,33 +1,33 @@
-import _0 from './btc'
-import _2 from './ltc'
-import _3 from './doge'
-import _5 from './dash'
-import _7 from './nmc'
-import _20 from './dgb'
-import _28 from './vtc'
-import _133 from './zec'
-import _145 from './bch'
-import _156 from './btg'
+import btc from './btc'
+import ltc from './ltc'
+import doge from './doge'
+import dash from './dash'
+import nmc from './nmc'
+import dgb from './dgb'
+import vtc from './vtc'
+import zec from './zec'
+import bch from './bch'
+import btg from './btg'
 
-const COINBOOK = [
-  _0,
-  _2,
-  _3,
-  _5,
-  _7,
-  _20,
-  _28,
-  _133,
-  _145,
-  _156
-]
+const COINBOOK = {
+  btc,
+  ltc,
+  doge,
+  dash,
+  nmc,
+  dgb,
+  vtc,
+  zec,
+  bch,
+  btg
+}
 
 const get = (symbol: string) => {
-  symbol = symbol.toLowerCase()
-  for (let i = 0; i < COINBOOK.length; i++) {
-    if (COINBOOK[i].symbol === symbol) return COINBOOK[i]
+  try {
+    return JSON.parse(JSON.stringify(COINBOOK[symbol.toLowerCase()]))
+  } catch {
+    return JSON.parse(JSON.stringify(COINBOOK['btc']))
   }
-  return COINBOOK[0]
 }
 
 export default {

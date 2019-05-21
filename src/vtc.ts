@@ -4,15 +4,16 @@ export default {
   name: 'Vertcoin',
   symbol: 'vtc',
   address_crypto: 'sha256',
+  address_length: 50,
   address_prefix: {
-    mainnet: [
-      0x47, // P2PKH
-      0x05 // P2SH
-    ],
-    testnet: [
-      0x6f, // P2PKH
-      0xc4 // P2SH
-    ]
+    mainnet: {
+      p2pkh: '47',
+      p2sh: '05'
+   },
+    testnet: {
+      p2pkh: '6f',
+      p2sh: 'c4'
+    }
   },
   bip: {
     '44': [ // P2PKH or P2SH

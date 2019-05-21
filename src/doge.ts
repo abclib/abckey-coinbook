@@ -4,15 +4,16 @@ export default {
   name: 'Dogecoin',
   symbol: 'doge',
   address_crypto: 'sha256',
+  address_length: 50,
   address_prefix: {
-    mainnet: [
-      0x1e, // P2PKH
-      0x16 // P2SH
-    ],
-    testnet: [
-      0x71, // P2PKH
-      0xc4 // P2SH
-    ]
+    mainnet: {
+      p2pkh: '1e',
+      p2sh: '16'
+    },
+    testnet: {
+      p2pkh: '71',
+      p2sh: 'c4'
+    }
   },
   bip: {
     '44': [ // P2PKH or P2SH

@@ -4,15 +4,18 @@ export default {
   name: 'Bitcoin',
   symbol: 'btc',
   address_crypto: 'sha256',
+  address_length: 50,
   address_prefix: {
-    mainnet: [
-      0x00, // P2PKH
-      0x05 // P2SH
-    ],
-    testnet: [
-      0x6f, // P2PKH
-      0xc4 // P2SH
-    ]
+    mainnet: {
+      hrp: 'bc',
+      p2pkh: '00',
+      p2sh: '05'
+    },
+    testnet: {
+      hrp: 'tb',
+      p2pkh: '6f',
+      p2sh: 'c4'
+    }
   },
   bip: {
     '44': [ // P2PKH or P2SH
