@@ -4,15 +4,16 @@ export default {
   name: 'Zcash',
   symbol: 'zec',
   address_crypto: 'sha256',
+  address_length: 50,
   address_prefix: {
-    mainnet: [
-      0x1cb8, // P2PKH
-      0x1cbd // P2SH
-    ],
-    testnet: [
-      0x1d50, // P2PKH
-      0x1cba // P2SH
-    ]
+    mainnet: {
+      p2pkh: '1cb8',
+      p2sh: '1cbd'
+   },
+    testnet: {
+      p2pkh: '1d50',
+      p2sh: '1cba'
+    }
   },
   bip: {
     '44': [ // P2PKH or P2SH

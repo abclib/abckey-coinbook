@@ -4,15 +4,16 @@ export default {
   name: 'Dash',
   symbol: 'dash',
   address_crypto: 'sha256',
+  address_length: 50,
   address_prefix: {
-    mainnet: [
-      0x4C, // P2PKH
-      0x10 // P2SH
-    ],
-    testnet: [
-      0x8C, // P2PKH
-      0x13 // P2SH
-    ]
+    mainnet: {
+      p2pkh: '4C',
+      p2sh: '10'
+   },
+    testnet: {
+      p2pkh: '8C',
+      p2sh: '13'
+    }
   },
   bip: {
     '44': [ // P2PKH or P2SH

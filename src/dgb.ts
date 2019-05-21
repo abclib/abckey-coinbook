@@ -4,11 +4,13 @@ export default {
   name: 'DigiByte',
   symbol: 'dgb',
   address_crypto: 'sha256',
+  address_length: 50,
   address_prefix: {
-    mainnet: [
-      0x1e, // P2PKH
-      0x3f // P2SH
-    ]
+    mainnet: {
+      p2pkh: '1e',
+      p2sh: '3f'
+    },
+    testnet: {}
   },
   bip: {
     '44': [ // P2PKH or P2SH

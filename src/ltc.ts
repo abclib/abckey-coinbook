@@ -4,17 +4,16 @@ export default {
   name: 'Litecoin',
   symbol: 'ltc',
   address_crypto: 'sha256',
+  address_length: 50,
   address_prefix: {
-    mainnet: [
-      0x30, // P2PKH
-      0x32 // P2SH
-      // 0x05 // deprecated
-    ],
-    testnet: [
-      0x6f, // P2PKH
-      0x3a // P2SH
-      // 0xc4 // deprecated
-    ]
+    mainnet: {
+      p2pkh: '30',
+      p2sh: '32' // 05 is deprecated
+    },
+    testnet: {
+      p2pkh: '6f',
+      p2sh: '3a' // c4 is deprecated
+    }
   },
   bip: {
     '44': [ // P2PKH or P2SH
