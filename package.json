@@ -1,38 +1,32 @@
 {
   "name": "@abckey/coinbook",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Coin Book",
   "author": "abckey <hi@abckey.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "tsc:check": "tsc --noEmit",
-    "tsc:watch": "npm run tsc:check -- --watch",
-    "build": "tsc",
-    "prepare": "tsc",
-    "test": "tsc & ava --verbose"
+    "tsc:watch": "npm run tsc:check --watch",
+    "build": "rimraf dist && tsc",
+    "build:docs": "typedoc src --out docs --mode file",
+    "test": "npm run build && ava -v",
+    "prepare": "npm run test"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/abcKeyCOM/coinbook.git"
   },
   "devDependencies": {
-    "@types/node": "^11.13.8",
-    "ava": "^1.4.1",
-    "ts-node": "^8.1.0",
+    "@types/node": "^13.7.7",
+    "ava": "^3.4.0",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.6.2",
+    "typedoc": "^0.16.11",
     "typescript": "^3.4.5"
   },
   "dependencies": {},
   "files": [
     "dist"
-  ],
-  "ava": {
-    "compileEnhancements": false,
-    "extensions": [
-      "ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ]
-  }
+  ]
 }
