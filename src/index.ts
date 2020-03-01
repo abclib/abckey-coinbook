@@ -9,7 +9,7 @@ import zec from './zec'
 import bch from './bch'
 import btg from './btg'
 
-const COINBOOK = {
+const __NETWORKS__ = [
   btc,
   ltc,
   doge,
@@ -20,13 +20,18 @@ const COINBOOK = {
   zec,
   bch,
   btg
-}
+]
 
-const get = (symbol: string) => {
-  try {
-    return JSON.parse(JSON.stringify(COINBOOK[symbol.toLowerCase()]))
-  } catch {
-    return JSON.parse(JSON.stringify(COINBOOK['btc']))
+const HD_HARDENED: number = 0x80000000;
+const fromHardened = (n: number): number => (n & ~HD_HARDENED) >>> 0;
+
+const get = (pathOrName: number[] | string) => {
+  if (typeof pathOrName === 'string') {
+    const name = pathOrName.toLowerCase()
+    return __NETWORKS__.find(n => n.name.toLowerCase() === name || n.symbol.toLowerCase() === name);
+  } else {
+    const slip44 = fromHardened(pathOrName[1]);
+    return __NETWORKS__.find(n => n.slip44 === slip44);
   }
 }
 

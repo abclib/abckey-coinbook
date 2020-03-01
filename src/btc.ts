@@ -1,6 +1,6 @@
 export default {
   market_id: 'bitcoin',
-  index: 0,
+  slip44: 0,
   name: 'Bitcoin',
   symbol: 'btc',
   address_crypto: 'sha256',

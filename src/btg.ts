@@ -1,6 +1,6 @@
 export default {
   market_id: 'bitcoin-gold',
-  index: 156,
+  slip44: 156,
   name: 'Bitcoin Gold',
   symbol: 'btg',
   address_crypto: 'sha256',

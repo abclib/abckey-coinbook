@@ -1,6 +1,6 @@
 export default {
   market_id: 'bitcoin-cash',
-  index: 145,
+  slip44: 145,
   name: 'Bitcoin Cash',
   symbol: 'bch',
   address_crypto: 'sha256',

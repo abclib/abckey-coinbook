@@ -1,6 +1,6 @@
 export default {
   market_id: 'vertcoin',
-  index: 28,
+  slip44: 28,
   name: 'Vertcoin',
   symbol: 'vtc',
   address_crypto: 'sha256',
