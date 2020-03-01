@@ -1,4 +1,3 @@
-// @ts-ignore
 import test from 'ava'
 import Coinbook from '../dist/index'
 
