@@ -28,10 +28,10 @@ const fromHardened = (n: number): number => (n & ~HD_HARDENED) >>> 0;
 const get = (pathOrName: number[] | string) => {
   if (typeof pathOrName === 'string') {
     const name = pathOrName.toLowerCase()
-    return __NETWORKS__.find(n => n.name.toLowerCase() === name || n.symbol.toLowerCase() === name);
+    return __NETWORKS__.find(n => n.name.toLowerCase() === name || n.symbol.toLowerCase() === name) || __NETWORKS__[0]
   } else {
-    const slip44 = fromHardened(pathOrName[1]);
-    return __NETWORKS__.find(n => n.slip44 === slip44);
+    const slip44 = fromHardened(pathOrName[1])
+    return __NETWORKS__.find(n => n.slip44 === slip44) || __NETWORKS__[0]
   }
 }
 
