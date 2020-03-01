@@ -1,6 +1,6 @@
 export default {
   market_id: 'litecoin',
-  index: 2,
+  slip44: 2,
   name: 'Litecoin',
   symbol: 'ltc',
   address_crypto: 'sha256',

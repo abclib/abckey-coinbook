@@ -1,6 +1,6 @@
 export default {
   market_id: 'namecoin',
-  index: 7,
+  slip44: 7,
   name: 'Namecoin',
   symbol: 'nmc',
   address_crypto: 'sha256',

@@ -1,6 +1,6 @@
 export default {
   market_id: 'dash',
-  index: 5,
+  slip44: 5,
   name: 'Dash',
   symbol: 'dash',
   address_crypto: 'sha256',
