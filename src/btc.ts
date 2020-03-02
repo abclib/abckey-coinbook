@@ -44,8 +44,8 @@ export default {
     coin: 'btc',
     bech32: 'bc',
     bip32: {
-      private: 76066276, // xprv_magic
-      public: 77429938 // xpub_magic_segwit_p2sh
+      private: 0x0488ade4, // xprv_magic
+      public: 0x0488b21e // xpub_magic_segwit_p2sh
     },
     dustThreshold: 0, // doesn't matter, for type correctness,
     messagePrefix: 'Bitcoin Signed Message:\n',
