@@ -22,6 +22,19 @@ const __NETWORKS__ = [
   btg
 ]
 
+const book = {
+  btc: btc,
+  ltc: ltc,
+  doge: doge,
+  dash: dash,
+  nmc: nmc,
+  dgb: dgb,
+  vtc: vtc,
+  zec: zec,
+  bch: bch,
+  btg: btg
+}
+
 const HD_HARDENED: number = 0x80000000;
 const fromHardened = (n: number): number => (n & ~HD_HARDENED) >>> 0;
 
@@ -36,5 +49,6 @@ const get = (pathOrName: number[] | string) => {
 }
 
 export default {
-  get
+  get,
+  book
 }
