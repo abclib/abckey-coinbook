@@ -3,7 +3,7 @@
   "compilerOptions": {
     "allowJs": false,
     "alwaysStrict": true,
-    "declaration": true,
+    "declaration": false,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -19,11 +19,11 @@
     "outDir": "dist",
     "pretty": true,
     "removeComments": true,
-    "resolveJsonModule": true,
+    "resolveJsonModule": false,
     "strict": true,
     "strictPropertyInitialization": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "ES5",
+    "target": "ES6",
     "traceResolution": false
   },
   "exclude": [
@@ -31,6 +31,6 @@
     "node_modules"
   ],
   "include": [
-    "src/**/*"
+    "src/*"
   ]
 }
