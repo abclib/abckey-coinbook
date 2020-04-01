@@ -6,7 +6,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf dist && tsc --declaration",
     "build:ts": "rimraf dist && tsc --declaration",
     "build:js": "rimraf dist && webpack",
     "build:json": "rimraf dist && tsc && node script/toJson.js",
