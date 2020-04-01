@@ -1,32 +1,39 @@
 {
   "name": "@abckey/coinbook",
-  "version": "0.0.5",
-  "description": "Coin Book",
+  "version": "0.0.7",
+  "description": "Coinbook",
   "author": "abckey <hi@abckey.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "tsc:check": "tsc --noEmit",
-    "tsc:watch": "npm run tsc:check --watch",
-    "build": "rimraf dist && tsc",
-    "build:docs": "typedoc src --out docs --mode file",
-    "test": "npm run build && ava -v",
-    "prepare": "npm run test"
+    "check": "npm-check -u",
+    "build:ts": "rimraf dist && tsc --declaration",
+    "build:js": "rimraf dist && webpack",
+    "build:json": "rimraf dist && tsc && node script/toJson.js",
+    "clear": "rimraf dist",
+    "commit": "npx git-cz"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abcKeyCOM/coinbook.git"
+    "url": "https://github.com/abclib/coinbook.git"
   },
   "devDependencies": {
-    "@types/node": "^13.7.7",
-    "ava": "^3.4.0",
+    "commitizen": "^4.0.3",
+    "editorconfig": "^0.15.3",
+    "npm-check": "^5.9.2",
     "rimraf": "^3.0.0",
-    "ts-node": "^8.6.2",
-    "typedoc": "^0.16.11",
-    "typescript": "^3.4.5"
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.4.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {},
   "files": [
     "dist"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

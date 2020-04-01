@@ -36,5 +36,6 @@ const get = (pathOrName: number[] | string) => {
 }
 
 export default {
-  get
+  get,
+  list: __NETWORKS__
 }
