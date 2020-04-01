@@ -1,12 +1,12 @@
 ## coinbook
-A Variety of virtual currency information generator.
+A Variety of Virtual Currency Information Generator.
 
 [![NPM version](https://img.shields.io/npm/v/@abckey/coinbook.svg)](https://www.npmjs.com/package/@abckey/coinbook)
 
 
 ## Install
 
-```
+```cmd
 npm i @abckey/coinbook
 ```
 
@@ -15,16 +15,12 @@ npm i @abckey/coinbook
 ```js
 import Coinbook from '@abckey/coinbook'
 
-Coinbook.get('btc')
+Coinbook.get('btc') // Symbol
+Coinbook.get('xxxxxxxxxxx') // Address
 ```
 
 ## Command
 ### Compile Typescript filegroup with d.ts
-```cmd
-npm run build
-```
-
-### Ibid
 ```cmd
 npm run build:ts
 ```
@@ -38,7 +34,6 @@ npm run build:js
 ```cmd
 npm run build:json
 ```
-
 
 ### Clean up the dist directory (For unpredictable errors)
 ```cmd
