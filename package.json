@@ -1,7 +1,7 @@
 {
   "name": "@abckey/coinbook",
   "version": "0.0.7",
-  "description": "A Variety of Coinbook",
+  "description": "Coinbook",
   "author": "abckey <hi@abckey.com>",
   "license": "MIT",
   "main": "dist/index.js",

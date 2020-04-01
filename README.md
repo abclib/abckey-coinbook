@@ -1,5 +1,4 @@
 ## coinbook
-A Variety of Virtual Currency Information Generator.
 
 [![NPM version](https://img.shields.io/npm/v/@abckey/coinbook.svg)](https://www.npmjs.com/package/@abckey/coinbook)
 
