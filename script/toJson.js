@@ -3,7 +3,7 @@ const coinbook = require('../dist/index')
 
 try {
   // Write json file
-  fs.writeFileSync('dist/index.json', JSON.stringify(coinbook.default.book, null, 2), 'utf-8')
+  fs.writeFileSync('dist/index.json', JSON.stringify(coinbook.default.list, null, 2), 'utf-8')
 
   // Read dist dir
   const dirFiles = fs.readdirSync('dist')
