@@ -6,6 +6,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
+    "check": "npm-check -u",
     "build:ts": "rimraf dist && tsc --declaration",
     "build:js": "rimraf dist && webpack",
     "build:json": "rimraf dist && tsc && node script/toJson.js",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "commitizen": "^4.0.3",
     "editorconfig": "^0.15.3",
+    "npm-check": "^5.9.2",
     "rimraf": "^3.0.0",
     "ts-loader": "^6.2.2",
     "typescript": "^3.4.5",
