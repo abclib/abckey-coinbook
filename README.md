@@ -1,7 +1,8 @@
 ## coinbook
+A Variety of virtual currency information generator.
+
 [![NPM version](https://img.shields.io/npm/v/@abckey/coinbook.svg)](https://www.npmjs.com/package/@abckey/coinbook)
 
-Coin Book
 
 ## Install
 
@@ -16,6 +17,34 @@ import Coinbook from '@abckey/coinbook'
 
 Coinbook.get('btc')
 ```
+
+## Command
+### Compile Typescript filegroup with d.ts
+```cmd
+npm run build
+```
+
+### Ibid
+```cmd
+npm run build:ts
+```
+
+### Compile into a packaged js file
+```cmd
+npm run build:js
+```
+
+### Compile into a packaged json file
+```cmd
+npm run build:json
+```
+
+
+### Clean up the dist directory (For unpredictable errors)
+```cmd
+npm run clear
+```
+
 ## References
 
 * [List of address prefixes](https://en.bitcoin.it/wiki/List_of_address_prefixes)
