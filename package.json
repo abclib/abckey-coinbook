@@ -1,31 +1,32 @@
 {
   "name": "@abckey/coinbook",
-  "version": "0.0.7",
-  "description": "Coinbook",
+  "version": "0.0.1",
+  "description": "This is the coin book.",
   "author": "abckey <hi@abckey.com>",
   "license": "MIT",
   "main": "dist/index.js",
-  "scripts": {
-    "check": "npm-check -u",
-    "build:ts": "rimraf dist && tsc --declaration",
-    "build:js": "rimraf dist && webpack",
-    "build:json": "rimraf dist && tsc && node script/toJson.js",
-    "clear": "rimraf dist",
-    "commit": "npx git-cz"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abclib/coinbook.git"
+    "url": "https://github.com/abclib/abckey-coinbook.git"
+  },
+  "scripts": {
+    "git": "npx git-cz@4.5.0",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "npm:check": "npx npm-check -u",
+    "tsc:check": "tsc --noEmit",
+    "tsc:watch": "npm run tsc:check --watch",
+    "build:docs": "npx typedoc src --out docs --mode file",
+    "build": "npx rimraf dist && tsc -d",
+    "test": "ava -v",
+    "prepare": "npm run test"
   },
   "devDependencies": {
-    "commitizen": "^4.0.3",
-    "editorconfig": "^0.15.3",
-    "npm-check": "^5.9.2",
-    "rimraf": "^3.0.0",
-    "ts-loader": "^6.2.2",
-    "typescript": "^3.4.5",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "@types/node": "^14.0.1",
+    "ava": "^3.8.2",
+    "conventional-changelog-cli": "^2.0.34",
+    "cz-conventional-changelog": "^3.2.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
   },
   "dependencies": {},
   "files": [

@@ -22,13 +22,6 @@ export default {
     ]
   },
   blocktime: 60, // seconds
-  blockbook: [
-    'https://doge1.trezor.io',
-    'https://doge2.trezor.io',
-    'https://doge3.trezor.io',
-    'https://doge4.trezor.io',
-    'https://doge5.trezor.io'
-  ],
   bitcore: [],
   network: {
     coin: 'doge',

@@ -22,10 +22,6 @@ export default {
     ]
   },
   blocktime: 600, // seconds
-  blockbook: [
-    'https://nmc1.trezor.io',
-    'https://nmc2.trezor.io'
-  ],
   bitcore: [],
   network: {
     coin: 'nmc',

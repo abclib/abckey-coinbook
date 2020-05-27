@@ -23,10 +23,6 @@ export default {
     ]
   },
   blocktime: 15, // seconds
-  blockbook: [
-    'https://dgb1.trezor.io',
-    'https://dgb2.trezor.io'
-  ],
   bitcore: [],
   network: {
     coin: 'dgb',

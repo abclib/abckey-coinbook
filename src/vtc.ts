@@ -26,13 +26,6 @@ export default {
     ]
   },
   blocktime: 150, // seconds
-  blockbook: [
-    'https://vtc1.trezor.io',
-    'https://vtc2.trezor.io',
-    'https://vtc3.trezor.io',
-    'https://vtc4.trezor.io',
-    'https://vtc5.trezor.io'
-  ],
   bitcore: [],
   network: {
     coin: 'vtc',

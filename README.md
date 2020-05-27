@@ -1,4 +1,4 @@
-## coinbook
+## abckey-coinbook
 
 [![NPM version](https://img.shields.io/npm/v/@abckey/coinbook.svg)](https://www.npmjs.com/package/@abckey/coinbook)
 
@@ -15,28 +15,6 @@ npm i @abckey/coinbook
 import Coinbook from '@abckey/coinbook'
 
 Coinbook.get('btc') // Symbol
-Coinbook.get('xxxxxxxxxxx') // Address
-```
-
-## Command
-### Compile Typescript filegroup with d.ts
-```cmd
-npm run build:ts
-```
-
-### Compile into a packaged js file
-```cmd
-npm run build:js
-```
-
-### Compile into a packaged json file
-```cmd
-npm run build:json
-```
-
-### Clean up the dist directory (For unpredictable errors)
-```cmd
-npm run clear
 ```
 
 ## References

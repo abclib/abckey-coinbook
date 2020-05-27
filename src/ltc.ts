@@ -26,13 +26,6 @@ export default {
     ]
   },
   blocktime: 150, // seconds
-  blockbook: [
-    'https://ltc1.trezor.io',
-    'https://ltc2.trezor.io',
-    'https://ltc3.trezor.io',
-    'https://ltc4.trezor.io',
-    'https://ltc5.trezor.io'
-  ],
   bitcore: [],
   network: {
     coin: 'ltc',

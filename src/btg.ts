@@ -26,13 +26,6 @@ export default {
     ]
   },
   blocktime: 600, // seconds
-  blockbook: [
-    'https://btg1.trezor.io',
-    'https://btg2.trezor.io',
-    'https://btg3.trezor.io',
-    'https://btg4.trezor.io',
-    'https://btg5.trezor.io'
-  ],
   bitcore: [],
   network: {
     coin: 'btg',

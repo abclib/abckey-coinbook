@@ -1,4 +1,4 @@
 export default {
-  extensions: ['ts', 'js'],
+  extensions: ['ts'],
   require: ['ts-node/register']
 };

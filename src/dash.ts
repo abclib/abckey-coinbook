@@ -22,13 +22,6 @@ export default {
     ]
   },
   blocktime: 150, // seconds
-  blockbook: [
-    'https://dash1.trezor.io',
-    'https://dash2.trezor.io',
-    'https://dash3.trezor.io',
-    'https://dash4.trezor.io',
-    'https://dash5.trezor.io'
-  ],
   bitcore: [],
   network: {
     coin: 'dash',

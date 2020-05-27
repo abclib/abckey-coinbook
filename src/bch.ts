@@ -22,13 +22,6 @@ export default {
     ]
   },
   blocktime: 600, // seconds
-  blockbook: [
-    'https://bch1.trezor.io',
-    'https://bch2.trezor.io',
-    'https://bch3.trezor.io',
-    'https://bch4.trezor.io',
-    'https://bch5.trezor.io'
-  ],
   bitcore: [],
   network: {
     coin: 'bch',

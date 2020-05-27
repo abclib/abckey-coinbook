@@ -22,13 +22,6 @@ export default {
     ]
   },
   blocktime: 150, // seconds
-  blockbook: [
-    'https://zec1.trezor.io',
-    'https://zec2.trezor.io',
-    'https://zec3.trezor.io',
-    'https://zec4.trezor.io',
-    'https://zec5.trezor.io'
-  ],
   bitcore: [],
   network: {
     coin: 'zec',
