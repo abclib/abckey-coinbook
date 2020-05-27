@@ -1,5 +1,4 @@
 export default {
-  market_id: 'digibyte',
   slip44: 20,
   name: 'DigiByte',
   symbol: 'dgb',

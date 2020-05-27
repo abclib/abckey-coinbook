@@ -1,5 +1,4 @@
 export default {
-  market_id: 'litecoin',
   slip44: 2,
   name: 'Litecoin',
   symbol: 'ltc',

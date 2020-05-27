@@ -1,5 +1,4 @@
 export default {
-  market_id: 'dash',
   slip44: 5,
   name: 'Dash',
   symbol: 'dash',

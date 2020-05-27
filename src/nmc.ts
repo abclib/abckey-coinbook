@@ -1,5 +1,4 @@
 export default {
-  market_id: 'namecoin',
   slip44: 7,
   name: 'Namecoin',
   symbol: 'nmc',

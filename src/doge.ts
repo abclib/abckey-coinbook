@@ -1,5 +1,4 @@
 export default {
-  market_id: 'dogecoin',
   slip44: 3,
   name: 'Dogecoin',
   symbol: 'doge',

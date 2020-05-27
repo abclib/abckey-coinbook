@@ -1,5 +1,4 @@
 export default {
-  market_id: 'bitcoin-cash',
   slip44: 145,
   name: 'Bitcoin Cash',
   symbol: 'bch',

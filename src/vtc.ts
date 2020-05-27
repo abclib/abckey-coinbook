@@ -1,5 +1,4 @@
 export default {
-  market_id: 'vertcoin',
   slip44: 28,
   name: 'Vertcoin',
   symbol: 'vtc',

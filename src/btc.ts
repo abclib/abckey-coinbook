@@ -1,5 +1,4 @@
 export default {
-  market_id: 'bitcoin',
   slip44: 0,
   name: 'Bitcoin',
   symbol: 'btc',

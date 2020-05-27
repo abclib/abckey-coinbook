@@ -1,5 +1,4 @@
 export default {
-  market_id: 'bitcoin-gold',
   slip44: 156,
   name: 'Bitcoin Gold',
   symbol: 'btg',

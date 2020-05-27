@@ -1,5 +1,4 @@
 export default {
-  market_id: 'zcash',
   slip44: 133,
   name: 'Zcash',
   symbol: 'zec',
