@@ -36,5 +36,5 @@ const get = (pathOrName: number | string) => {
 
 export default {
   get,
-  list: __LIST__
+  __LIST__
 }
